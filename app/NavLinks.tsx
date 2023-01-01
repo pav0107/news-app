@@ -1,6 +1,6 @@
 'use client';
 
-import { catergories } from '../constants';
+import { categories } from '../constants';
 import { usePathname } from 'next/navigation';
 import NavLink from './NavLink';
 
@@ -12,8 +12,8 @@ function NavLinks() {
   };
 
   return (
-    <nav className="grid grid-cols-4 md:grid-cols-7 text-xs md:text-sm gap-4 pb-10 max-w-6xl mx-auto border-b">
-      {catergories.map((category) => (
+    <nav className="grid max-w-6xl grid-cols-4 gap-4 pb-10 mx-auto text-xs border-b md:grid-cols-7 md:text-sm">
+      {categories.map((category) => (
         <NavLink
           key={category}
           category={category}
